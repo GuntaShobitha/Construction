@@ -1,5 +1,5 @@
 const user = JSON.parse(localStorage.getItem('stackly_user') || 'null');
-if (!user) window.location.href = '/login.html';
+if (!user) window.location.href = './login.html';
 const nameEl = document.getElementById('userName');
 if (nameEl && user) nameEl.textContent = user.name;
 
@@ -20,7 +20,7 @@ document.querySelectorAll('.dash-nav a[data-target]').forEach(link => {
 document.getElementById('logout')?.addEventListener('click', (e) => {
   e.preventDefault();
   localStorage.removeItem('stackly_user');
-  window.location.href = '/login.html';
+  window.location.href = './login.html';
 });
 // Mobile toggle
 document.querySelector('.dash-toggle')?.addEventListener('click', () => {
