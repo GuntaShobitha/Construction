@@ -42,7 +42,7 @@ document.querySelectorAll('.faq-item').forEach(item => {
 
 // Social redirects -> 404
 document.querySelectorAll('[data-social]').forEach(a => {
-  a.addEventListener('click', (e) => { e.preventDefault(); window.location.href = '/404.html'; });
+  a.addEventListener('click', (e) => { e.preventDefault(); window.location.href = './404.html'; });
 });
 
 // Contact form fake submit
