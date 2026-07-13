@@ -9,7 +9,7 @@ if (form) {
     const err = document.getElementById('err');
     if (!role || !email || !pass) { err.textContent = 'Please fill all fields'; err.classList.add('show'); return; }
     localStorage.setItem('stackly_user', JSON.stringify({ role, email, name: email.split('@')[0] }));
-    window.location.href = role === 'admin' ? '/dashboard-admin.html' : '/dashboard-user.html';
+    window.location.href = role === 'admin' ? './dashboard-admin.html' : './dashboard-user.html';
   });
 }
 // Register
@@ -24,6 +24,6 @@ if (rform) {
     const err = document.getElementById('err');
     if (!role || !email || !name || !pass) { err.textContent = 'Please fill all fields'; err.classList.add('show'); return; }
     localStorage.setItem('stackly_user', JSON.stringify({ role, email, name }));
-    window.location.href = role === 'admin' ? '/dashboard-admin.html' : '/dashboard-user.html';
+    window.location.href = role === 'admin' ? './dashboard-admin.html' : './dashboard-user.html';
   });
 }
