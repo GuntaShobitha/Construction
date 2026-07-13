@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Login — STACKLY Construction</title>
+    <meta name="description" content="Sign in to your Stackly account.">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="/favicon.ico">
+</head>
+
+<body>
+    <div class="auth-shell">
+        <div class="auth-side">
+            <div>
+                <a href="./home.html" class="nav-logo"><img src="./images/logo-dark-themed.webp" alt="STACKLY"
+                        style="height:60px"></a>
+                <a href="./home.html" class="auth-back" style="margin-top:2rem"><i class="fa-solid fa-arrow-left"></i>
+                    Back to Home</a>
+            </div>
+            <div class="quote">"Building tomorrow's landmarks — one project at a time."<br><span
+                    style="font-size:1rem;color:#fff;opacity:.7;font-family:var(--font-body);margin-top:1rem;display:block">—
+                    The Stackly Promise</span></div>
+        </div>
+        <div class="auth-form-wrap">
+            <div class="auth-card">
+                <h1>Welcome Back</h1>
+                <p class="sub">Sign in to your dashboard</p>
+                <form id="loginForm">
+                    <div class="field"><label>Role</label>
+                        <select id="role" required>
+                            <option value="">Select role…</option>
+                            <option value="user">User</option>
+                            <option value="admin">Admin</option>
+                        </select>
+                    </div>
+                    <div class="field"><label>Email</label><input id="email" type="email" placeholder="you@company.com"
+                            required></div>
+                    <div class="field"><label>Password</label><input id="password" type="password"
+                            placeholder="••••••••" required></div>
+                    <div class="form-row"><label
+                            style="color:var(--muted);display:flex;align-items:center;gap:.4rem;text-transform:none;letter-spacing:0;font-size:.85rem"><input
+                                type="checkbox"> Remember me</label><a href="#"
+                            onclick="alert('Reset link sent to your email');return false;">Forgot password?</a></div>
+                    <div class="error" id="err"></div>
+                    <button class="btn" type="submit" style="width:100%;justify-content:center"><span>Sign In</span> <i
+                            class="fa-solid fa-arrow-right"></i></button>
+                </form>
+                <p class="auth-alt">New here? <a href="./register.html">Create an account</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="./js/auth.js"></script>
+</body>
+
+</html>

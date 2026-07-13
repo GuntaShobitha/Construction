@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact STACKLY Construction</title>
+  <meta name="description"
+    content="Get in touch with Stackly. Free consultation, fixed-price quote in 5 business days.">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="/favicon.ico">
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="./home.html" class="nav-logo"><img src="./images/logo-dark-themed.webp" class="nav-logo-img" alt="STACKLY"></a>
+      <ul class="nav-links">
+        <li><a href="./home.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="nav-cta"><a href="./login.html" class="btn"><i class="fa-solid fa-right-to-bracket"></i>
+          Login</a><button class="nav-toggle"><i class="fa-solid fa-bars"></i></button></div>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="container">
+      <span class="eyebrow reveal">Get in Touch</span>
+      <h1 class="reveal delay-1">Contact Us</h1>
+      <p class="reveal delay-2">Free consultation. Fixed-price quote in 5 business days.</p>
+      <div class="breadcrumb reveal delay-3"><a href="./home.html">Home</a> / Contact</div>
+    </div>
+  </header>
+
+  <!-- 1. Info -->
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-3">
+        <div class="contact-info-card reveal">
+          <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+          <h3>Visit Us</h3>
+          <p>245 Building Street<br>New York, NY 10001</p>
+        </div>
+        <div class="contact-info-card reveal delay-1">
+          <div class="icon"><i class="fa-solid fa-phone"></i></div>
+          <h3>Call Us</h3>
+          <p>+1 (555) 010-2340<br>Mon–Fri · 8am–6pm</p>
+        </div>
+        <div class="contact-info-card reveal delay-2">
+          <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+          <h3>Email Us</h3>
+          <p>hello@stackly.com<br>press@stackly.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Form + image -->
+  <section class="section" style="background:var(--navy)">
+    <div class="container split">
+      <div class="reveal"><span class="eyebrow">Send a Message</span>
+        <h2>Let's Talk About Your Project.</h2>
+        <p style="color:var(--muted);margin:1rem 0 2rem">Tell us what you're building. We'll respond within one business
+          day.</p>
+        <form class="contact-form">
+          <div class="grid grid-2" style="gap:1rem;margin-bottom:1rem">
+            <div class="field"><label>Name</label><input required></div>
+            <div class="field"><label>Email</label><input type="email" required></div>
+          </div>
+          <div class="grid grid-2" style="gap:1rem;margin-bottom:1rem">
+            <div class="field"><label>Phone</label><input></div>
+            <div class="field"><label>Project Type</label><select>
+                <option>Residential</option>
+                <option>Commercial</option>
+                <option>Industrial</option>
+                <option>Renovation</option>
+              </select></div>
+          </div>
+          <div class="field"><label>Message</label><textarea required
+              placeholder="Tell us about your project…"></textarea></div>
+          <button class="btn" type="submit"><span>Send Message</span> <i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+      <div class="split-media reveal delay-1"><img src="./images/contact.webp" alt="Office" loading="lazy"></div>
+    </div>
+  </section>
+
+  <!-- 3. Offices -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal"><span class="eyebrow">Global Presence</span>
+        <h2>Our Offices</h2>
+      </div>
+      <div class="grid grid-4">
+        <div class="feature reveal">
+          <div class="feature-icon"><i class="fa-solid fa-city"></i></div>
+          <h3>New York</h3>
+          <p>245 Building St<br>NY 10001, USA</p>
+        </div>
+        <div class="feature reveal delay-1">
+          <div class="feature-icon"><i class="fa-solid fa-city"></i></div>
+          <h3>London</h3>
+          <p>18 Shoreditch High<br>E1 6JE, UK</p>
+        </div>
+        <div class="feature reveal delay-2">
+          <div class="feature-icon"><i class="fa-solid fa-city"></i></div>
+          <h3>Dubai</h3>
+          <p>Al Quoz Industrial 3<br>UAE</p>
+        </div>
+        <div class="feature reveal delay-3">
+          <div class="feature-icon"><i class="fa-solid fa-city"></i></div>
+          <h3>Mumbai</h3>
+          <p>BKC, Bandra East<br>Maharashtra, India</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Map -->
+  <section class="section" style="background:var(--navy)">
+    <div class="container">
+      <div class="section-head reveal"><span class="eyebrow">Find Us</span>
+        <h2>On the Map</h2>
+      </div>
+      <div class="reveal" style="border-radius:var(--radius);overflow:hidden;border:1px solid var(--border)">
+        <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-74.02%2C40.70%2C-73.96%2C40.75&layer=mapnik"
+          style="width:100%;height:400px;border:0" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. FAQ -->
+  <section class="section">
+    <div class="container" style="max-width:800px">
+      <div class="section-head reveal"><span class="eyebrow">Answers</span>
+        <h2>Contact FAQs</h2>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q">How fast do you reply?</div>
+        <div class="faq-a">Within 1 business day. Urgent inquiries: call our main line.</div>
+      </div>
+      <div class="faq-item reveal delay-1">
+        <div class="faq-q">Do you offer free consultations?</div>
+        <div class="faq-a">Yes — on-site consult and preliminary estimate at no cost.</div>
+      </div>
+      <div class="faq-item reveal delay-2">
+        <div class="faq-q">Can I visit an active site?</div>
+        <div class="faq-a">Absolutely. We host client site tours by appointment.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. CTA -->
+  <section class="cta-band">
+    <div class="container reveal">
+      <h2>Prefer to Talk Now?</h2>
+      <a href="tel:+15550102340" class="btn"><i class="fa-solid fa-phone"></i> <span>+1 (555) 010-2340</span></a>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img src="./images/logo-dark-themed.webp" alt="STACKLY" style="height:50px;margin-bottom:1rem">
+          <p>Building the future with precision, craftsmanship, and integrity. Stackly delivers world-class construction
+            since 1998.</p>
+          <div class="footer-social">
+            <a href="404.html" data-social aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="404.html" data-social aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="404.html" data-social aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="404.html" data-social aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="404.html" data-social aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="404.html">Residential</a></li>
+            <li><a href="404.html">Commercial</a></li>
+            <li><a href="404.html">Industrial</a></li>
+            <li><a href="404.html">Renovation</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><i class="fa-solid fa-location-dot"></i> 245 Building St, NY 10001</li>
+            <li><i class="fa-solid fa-phone"></i> +1 (555) 010-2340</li>
+            <li><i class="fa-solid fa-envelope"></i> hello@stackly.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bot">© 2026 STACKLY Construction. All rights reserved.</div>
+    </div>
+  </footer>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

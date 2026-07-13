@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>User Dashboard — STACKLY</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="dash">
+        <aside class="dash-side">
+            <div class="dash-brand"><img src="./images/logo-dark-themed.webp" alt="STACKLY"></div>
+            <ul class="dash-nav">
+                <li><a href="#" class="active" data-target="overview"><i class="fa-solid fa-gauge-high"></i>
+                        Overview</a></li>
+                <li><a href="dashboard-user.html" data-target="projects"><i class="fa-solid fa-diagram-project"></i> My Projects</a></li>
+                <li><a href="dashboard-user.html" data-target="quotes"><i class="fa-solid fa-file-invoice-dollar"></i> Quotes</a></li>
+                <li><a href="dashboard-user.html" data-target="messages"><i class="fa-solid fa-envelope"></i> Messages</a></li>
+                <li><a href="dashboard-user.html" data-target="documents"><i class="fa-solid fa-folder"></i> Documents</a></li>
+                <li><a href="dashboard-user.html" data-target="support"><i class="fa-solid fa-headset"></i> Support</a></li>
+                <li><a href="dashboard-user.html" data-target="settings"><i class="fa-solid fa-gear"></i> Settings</a></li>
+                <li style="margin-top:2rem;border-top:1px solid var(--border);padding-top:1rem"><a href="#"
+                        id="logout"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+            </ul>
+        </aside>
+        <main class="dash-main">
+            <!-- <div class="dash-top">
+<button class="dash-toggle"><i class="fa-solid fa-bars"></i></button>
+<h1 id="pageTitle">Overview</h1>
+<div>Welcome, <strong id="userName" style="color:var(--orange)">User</strong></div>
+</div>  -->
+
+
+
+            <div class="dash-top">
+
+                <div class="dash-header">
+                    <button class="dash-toggle">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                    <h1 id="pageTitle">Overview</h1>
+                </div>
+
+                <div class="dash-welcome">
+                    <span>Welcome back,</span>
+                    <strong id="userName">User</strong>
+                </div>
+
+            </div>
+
+            <section id="overview" class="dash-section active">
+                <div class="stat-cards">
+                    <div class="stat-card">
+                        <div class="n" data-count="3">3</div>
+                        <div class="l">Active Projects</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="n" data-count="12">12</div>
+                        <div class="l">Quotes Received</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="n" data-count="8">8</div>
+                        <div class="l">Documents</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="n" data-count="24">24</div>
+                        <div class="l">Messages</div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <h3>Recent Activity</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Event</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Jul 10</td>
+                                <td>Site inspection complete</td>
+                                <td><span class="tag ok">Done</span></td>
+                            </tr>
+                            <tr>
+                                <td>Jul 08</td>
+                                <td>New quote received</td>
+                                <td><span class="tag warn">Review</span></td>
+                            </tr>
+                            <tr>
+                                <td>Jul 05</td>
+                                <td>Contract signed</td>
+                                <td><span class="tag ok">Done</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="panel">
+                    <h3>Featured Project</h3>
+                    <img src="./images/project2.webp" alt="" style="border-radius:6px;margin-bottom:1rem">
+                    <p>Your Azure Villa build is 62% complete. Estimated handover: December 2026.</p>
+                </div>
+            </section>
+
+            <section id="projects" class="dash-section">
+                <div class="grid grid-3">
+                    <div class="card">
+                        <div class="card-img"><img src="./images/project1.webp" alt=""></div>
+                        <div class="card-body">
+                            <h3>Riverfront Mall</h3>
+                            <p>Status: <span class="tag warn">In Progress</span></p>
+                            <p style="margin-top:.6rem">45% complete · Due Q4 2026</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img"><img src="./images/project2.webp" alt=""></div>
+                        <div class="card-body">
+                            <h3>Azure Villa</h3>
+                            <p>Status: <span class="tag ok">On Track</span></p>
+                            <p style="margin-top:.6rem">62% complete · Due Dec 2026</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img"><img src="./images/project3.webp" alt=""></div>
+                        <div class="card-body">
+                            <h3>Home Extension</h3>
+                            <p>Status: <span class="tag err">Planning</span></p>
+                            <p style="margin-top:.6rem">Design phase</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="quotes" class="dash-section">
+                <div class="panel">
+                    <h3>Your Quotes</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Quote #</th>
+                                <th>Project</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Q-1042</td>
+                                <td>Villa Extension</td>
+                                <td>$182,400</td>
+                                <td><span class="tag warn">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>Q-1041</td>
+                                <td>Kitchen Reno</td>
+                                <td>$54,800</td>
+                                <td><span class="tag ok">Accepted</span></td>
+                            </tr>
+                            <tr>
+                                <td>Q-1038</td>
+                                <td>Garage Build</td>
+                                <td>$28,300</td>
+                                <td><span class="tag err">Expired</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="messages" class="dash-section">
+                <div class="panel">
+                    <h3>Inbox</h3>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><strong>Marcus Reid</strong><br><span
+                                        style="color:var(--muted);font-size:.85rem">Weekly progress report
+                                        attached</span></td>
+                                <td style="text-align:right;color:var(--muted)">2h ago</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Nora Chen</strong><br><span
+                                        style="color:var(--muted);font-size:.85rem">Structural review scheduled for
+                                        Friday</span></td>
+                                <td style="text-align:right;color:var(--muted)">1d ago</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Elena Voss</strong><br><span
+                                        style="color:var(--muted);font-size:.85rem">Revised drawings ready for
+                                        review</span></td>
+                                <td style="text-align:right;color:var(--muted)">3d ago</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="documents" class="dash-section">
+                <div class="panel">
+                    <h3>Documents</h3>
+                    <div class="grid grid-3">
+                        <div class="feature"><i class="fa-solid fa-file-pdf"
+                                style="font-size:2rem;color:var(--orange)"></i>
+                            <h3 style="margin-top:.8rem">Contract.pdf</h3>
+                            <p>1.2 MB · Signed</p>
+                        </div>
+                        <div class="feature"><i class="fa-solid fa-file-image"
+                                style="font-size:2rem;color:var(--orange)"></i>
+                            <h3 style="margin-top:.8rem">Blueprints.zip</h3>
+                            <p>18 MB · v3</p>
+                        </div>
+                        <div class="feature"><i class="fa-solid fa-file-lines"
+                                style="font-size:2rem;color:var(--orange)"></i>
+                            <h3 style="margin-top:.8rem">Permit.pdf</h3>
+                            <p>240 KB · Approved</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="support" class="dash-section">
+                <div class="panel">
+                    <h3>Get Help</h3>
+                    <p style="color:var(--muted);margin-bottom:1.5rem">Our support team responds within 2 hours during
+                        business days.</p>
+                    <form class="contact-form">
+                        <div class="field"><label>Subject</label><input required></div>
+                        <div class="field"><label>Message</label><textarea required></textarea></div>
+                        <button class="btn" type="submit"><span>Send</span></button>
+                    </form>
+                </div>
+            </section>
+
+            <section id="settings" class="dash-section">
+                <div class="panel">
+                    <h3>Account Settings</h3>
+                    <div class="field"><label>Display Name</label><input value="John Doe"></div>
+                    <div class="field"><label>Email</label><input type="email" value="john@example.com"></div>
+                    <div class="field"><label>Phone</label><input value="+1 555 0100"></div>
+                    <button class="btn"><span>Save Changes</span></button>
+                </div>
+                <div class="panel">
+                    <h3>Preferences</h3>
+                    <label style="display:flex;gap:.6rem;color:var(--muted);margin:.5rem 0"><input type="checkbox"
+                            checked> Email notifications</label>
+                    <label style="display:flex;gap:.6rem;color:var(--muted);margin:.5rem 0"><input type="checkbox"
+                            checked> SMS updates on milestones</label>
+                    <label style="display:flex;gap:.6rem;color:var(--muted);margin:.5rem 0"><input type="checkbox">
+                        Marketing newsletter</label>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="./js/dash.js"></script>
+</body>
+
+</html>
