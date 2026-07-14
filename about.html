@@ -17,22 +17,51 @@
 </head>
 
 <body>
-  <nav class="nav">
-    <div class="nav-inner">
-      <a href="./home.html" class="nav-logo"><img src="./images/logo-dark-themed.webp" alt="STACKLY Logo"
-          class="nav-logo-img"></a>
-      <ul class="nav-links">
-        <li><a href="./home.html">Home</a></li>
-        <li><a href="./about.html" class="active">About</a></li>
-        <li><a href="./services.html">Services</a></li>
-        <li><a href="./blog.html">Blog</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-      </ul>
-      <div class="nav-cta"><a href="./login.html" class="btn"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
-        <button class="nav-toggle"><i class="fa-solid fa-bars"></i></button>
-      </div>
+    <nav class="top-navigation">
+  <div class="top-navigation-wrapper">
+
+    <!-- Logo -->
+    <a href="./home.html" class="nav-logo">
+      <img src="./images/logo-dark-themed.webp" alt="STACKLY Logo" class="nav-logo-img">
+    </a>
+
+    <!-- Desktop Menu -->
+    <ul class="center-navigation">
+      <li><a href="./home.html" >Home</a></li>
+      <li><a href="./about.html" class="current-page">About</a></li>
+      <li><a href="./services.html">Services</a></li>
+      <li><a href="./blog.html">Blog</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+    </ul>
+
+    <!-- Desktop Login -->
+    <div class="right-navigation">
+      <a href="./login.html" class="login-action">
+        <i class="fa-solid fa-right-to-bracket"></i> Login
+      </a>
+
+      <button class="mobile-menu-button" id="mobileMenuBtn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </div>
-  </nav>
+
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-navigation" id="mobileMenu">
+
+    <a href="./home.html">Home</a>
+    <a href="./about.html">About</a>
+    <a href="./services.html">Services</a>
+    <a href="./blog.html">Blog</a>
+    <a href="./contact.html">Contact</a>
+
+    <a href="./login.html" class="mobile-login-btn">
+      <i class="fa-solid fa-right-to-bracket"></i> Login
+    </a>
+
+  </div>
+</nav>
 
   <header class="page-header">
     <div class="container">

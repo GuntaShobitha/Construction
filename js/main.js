@@ -51,3 +51,15 @@ if (cf) cf.addEventListener('submit', (e) => {
   e.preventDefault();
   cf.innerHTML = '<div class="testimonial"><p>Thank you! Your message has been received. Our team will contact you within 24 hours.</p><span class="who">— Stackly Team</span></div>';
 });
+
+
+const menuBtn = document.getElementById("mobileMenuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+
+menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("active");
+
+    menuBtn.innerHTML = mobileMenu.classList.contains("active")
+        ? '<i class="fa-solid fa-xmark"></i>'
+        : '<i class="fa-solid fa-bars"></i>';
+});

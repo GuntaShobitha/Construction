@@ -1527,3 +1527,186 @@ th {
 .dash-main {
     overflow-x: auto;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===========================
+   Navigation
+=========================== */
+
+.top-navigation{
+    width:100%;
+    background: transparent;
+    position:sticky;
+    top:0;
+    z-index:999;
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+}
+
+.top-navigation-wrapper{
+    max-width:1300px;
+    margin:auto;
+    padding:16px 35px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+/* Logo */
+
+.brand-logo{
+    flex:1;
+}
+
+.brand-logo-image{
+    width:170px;
+    display:block;
+}
+
+/* Center Menu */
+
+.center-navigation{
+    flex:2;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:40px;
+
+    list-style:none;
+}
+
+.center-navigation li{
+    list-style:none;
+}
+
+.center-navigation a{
+    text-decoration:none;
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.center-navigation a:hover,
+.center-navigation
+
+
+  
+
+ .current-page{
+    color: #ff9800;
+}
+
+/* Right */
+
+.right-navigation{
+    flex:1;
+
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    gap:18px;
+}
+
+.login-action{
+    padding:12px 26px;
+    background:#ff9800;
+    color:#fff;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.login-action:hover{
+    background:#222;
+}
+
+/* Burger */
+
+.mobile-menu-button{
+    display:none;
+    border:none;
+    background:none;
+    font-size:28px;
+    cursor:pointer;
+    color: #fff;
+}
+
+/* Mobile Menu */
+
+.mobile-navigation{
+    display:none;
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media(max-width:900px){
+
+.center-navigation{
+    display:none;
+}
+
+.login-action{
+    display:none;
+}
+
+.mobile-menu-button{
+    display:block;
+}
+
+.brand-logo-image{
+    width:150px;
+}
+
+.top-navigation-wrapper{
+    padding:15px 20px;
+}
+
+.mobile-navigation{
+    display:none;
+    flex-direction:column;
+    background:#fff;
+    padding:20px;
+    border-top:1px solid #eee;
+}
+
+.mobile-navigation.active{
+    display:flex;
+}
+
+.mobile-navigation a{
+    text-decoration:none;
+    color:#222;
+    padding:15px 0;
+    font-size:17px;
+    font-weight:600;
+    border-bottom:1px solid #f3f3f3;
+}
+
+.mobile-login-btn{
+    margin-top:18px;
+    text-align:center;
+    background:#ff9800;
+    color:#fff !important;
+    padding:14px;
+    border-radius:30px;
+    border:none !important;
+}
+
+}
