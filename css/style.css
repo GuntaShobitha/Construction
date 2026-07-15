@@ -1742,3 +1742,30 @@ body.menu-open {
     height: 100vh;
     touch-action: none; /* Better for mobile */
 }
+
+
+
+
+
+/* .dash-welcome strong {
+    display: inline-block;
+    max-width: 220px; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+} */
+
+
+
+/* .dash-welcome strong {
+    word-break: break-word;
+    overflow-wrap: anywhere;
+} */
+
+
+
+.dash-welcome strong {
+    font-size: 0.9rem;
+    white-space: nowrap;
+}

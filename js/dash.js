@@ -1,7 +1,17 @@
+// const user = JSON.parse(localStorage.getItem('stackly_user') || 'null');
+// if (!user) window.location.href = './login.html';
+// const nameEl = document.getElementById('userName');
+// if (nameEl && user) nameEl.textContent = user.name;
+
+
 const user = JSON.parse(localStorage.getItem('stackly_user') || 'null');
 if (!user) window.location.href = './login.html';
+
 const nameEl = document.getElementById('userName');
-if (nameEl && user) nameEl.textContent = user.name;
+
+if (nameEl && user) {
+  nameEl.textContent = user.email;
+}
 
 // Sidebar nav switching
 document.querySelectorAll('.dash-nav a[data-target]').forEach(link => {
