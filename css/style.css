@@ -1547,7 +1547,7 @@ th {
 
 .top-navigation{
     width:100%;
-    background: transparent;
+    background: black;
     position:sticky;
     top:0;
     z-index:999;

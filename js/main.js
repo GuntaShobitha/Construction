@@ -49,8 +49,11 @@ document.querySelectorAll('[data-social]').forEach(a => {
 const cf = document.querySelector('.contact-form');
 if (cf) cf.addEventListener('submit', (e) => {
   e.preventDefault();
-  cf.innerHTML = '<div class="testimonial"><p>Thank you! Your message has been received. Our team will contact you within 24 hours.</p><span class="who">— Stackly Team</span></div>';
+  // cf.innerHTML = '<div class="testimonial"><p>Thank you! Your message has been received. Our team will contact you within 24 hours.</p><span class="who">— Stackly Team</span></div>';
+ window.location.href='404.html'
+
 });
+
 
 
 const menuBtn = document.getElementById("mobileMenuBtn");
