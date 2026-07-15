@@ -56,13 +56,39 @@ if (cf) cf.addEventListener('submit', (e) => {
 
 
 
+// const menuBtn = document.getElementById("mobileMenuBtn");
+// const mobileMenu = document.getElementById("mobileMenu");
+
+// menuBtn.addEventListener("click", () => {
+//     mobileMenu.classList.toggle("active");
+
+//     menuBtn.innerHTML = mobileMenu.classList.contains("active")
+//         ? '<i class="fa-solid fa-xmark"></i>'
+//         : '<i class="fa-solid fa-bars"></i>';
+// });
+
+
+// const menuBtn = document.getElementById("mobileMenuBtn");
+// const mobileMenu = document.getElementById("mobileMenu");
+
+// menuBtn.addEventListener("click", () => {
+//     mobileMenu.classList.toggle("active");
+//     document.body.classList.toggle("menu-open");
+// });
+
 const menuBtn = document.getElementById("mobileMenuBtn");
 const mobileMenu = document.getElementById("mobileMenu");
 
 menuBtn.addEventListener("click", () => {
-    mobileMenu.classList.toggle("active");
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 
-    menuBtn.innerHTML = mobileMenu.classList.contains("active")
-        ? '<i class="fa-solid fa-xmark"></i>'
-        : '<i class="fa-solid fa-bars"></i>';
+    setTimeout(() => {
+        mobileMenu.classList.toggle("active");
+        document.body.classList.toggle("menu-open");
+    }, 300);
 });
+
+

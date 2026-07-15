@@ -1684,7 +1684,29 @@ th {
     background:#fff;
     padding:20px;
     border-top:1px solid #eee;
-}
+} 
+
+
+
+
+/* .mobile-navigation{
+    position: fixed;
+    top: 72px;          
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 72px);
+    background: #fff;
+    overflow-y: auto;
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+    z-index: 998;
+} */
+
+
+
+
+
 
 .mobile-navigation.active{
     display:flex;
@@ -1709,4 +1731,14 @@ th {
     border:none !important;
 }
 
+}
+
+
+
+
+
+body.menu-open {
+    overflow: hidden;
+    height: 100vh;
+    touch-action: none; /* Better for mobile */
 }
